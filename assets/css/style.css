@@ -2,7 +2,8 @@
   
    margin: 0 auto;
    text-align: center;
-   margin-bottom: 70px;
+   margin-bottom: 50px;
+   color:#4E4D4D;
 }
 .section_title .title_image{
    margin: 0 auto;
@@ -17,8 +18,84 @@
    font-size: 50px;
    font-weight: normal;
 }
+ul{
+   list-style: none;
+}
+ul li{
+   display: inline-block;
+}
+/**********Hero Section*****************************/
+
+.navbar{
+   /*width: 90%;*/
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row-reverse;
+   position: fixed;
+    /* width: 100%; */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.navbar .navbar-brand{
+   margin-left: 358px;
+   color: #fff;
+}
+.navbar .navbar-collapse{
+   flex-flow: row-reverse wrap;
+}
+.navbar .navbar-collapse .nav-item {
+   display: inline-block;
+   margin-left: 25px;
+   color:#fff;
+   font-size: 18px;
+}
+
+
+#hero{
+   background-image: url('../img/hero.PNG');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 950px;
+   padding-top: 310px;
+   padding-right: 135px;
+   text-align: right;
+   color: #fff;
+}
+#hero h1{
+   font-size: 45px;
+   font-weight: normal;
+   width:455px;
+ float: right;
+ padding-bottom: 20px;
+}
+#hero p{
+   float: right;
+   width:648px;
+   font-size: 25px; 
+   padding-bottom: 35px;
+}
+#hero form{
+   float: right;
+}
+#hero .form-inline .form-control{
+   background-color:transparent;
+   text-align: right;
+   width:255px;
+   height: 50px;
+   padding: 10px 15px;
+   border-radius: 17px;
+   margin-left: 15px;
+}
+#hero .form-inline .form-control::placeholder{
+   color: #fff;
+}
+
+/*******************************************************/
 #categories{
-   margin-bottom: 170px;
+   margin-bottom: 140px;
 }
 #categories .category{
    display: block;
@@ -83,7 +160,7 @@
 }
 /*********************About Us**************************/
 #abou_Us{
-   margin-bottom: 170px;
+   margin-bottom: 120px;
 }
 #abou_Us .abot{
    background-image: url('../img/Group\ 9.png');
@@ -108,7 +185,7 @@
 #offers{
    width:100%;
    text-align: right;
-   margin-bottom: 170px;
+   margin-bottom: 120px;
 }
 
 #offers .offer .offer_Box{
@@ -199,18 +276,74 @@ font-size: 15px;
 #contact form{
    background: #fff;
    border-radius: 32px ;
+   padding: 50px;
+   text-align: right;
+   box-shadow: 5px 10px 20px rgba(0,0,0,.4);
 }
 
+#contact form label{
+   font-size: 20px;
+   color: #4E4D4D
+}
+#contact form input.form-control{
+   height: 49px;
+   border-radius: 16px;
+   pad: 10px;
+}
+#contact form textarea{
+   text-align: right;
+   resize: none;
+   padding: 10px;
+   border-radius: 16px;
+}
+#contact form .btn{
+   background-color: #B5004D !important;
+   border:none;
+   width:150px;
+   height: 50px;
+   border-radius: 17px;
+   margin-top: 32px;
+}
+#contact form .btn:hover{
+   box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+}
 #contact .footer{
-  /* position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;*/
-   height:200px;
+   position: relative;
+   height:415px;
    background-image: url('../img/footer.png');
    background-position: top center;
    background-repeat: no-repeat;
    background-size: cover;
    z-index: -10;
-   margin-top: -80px;
+   margin-top: -220px;
+   
+}
+#contact .footer .social{
+   position: absolute;
+   bottom: 50px;
+   left: 25%;
+   margin: 0 auto;
+   width:72%;
+}
+#contact .footer .social .right,
+#contact .footer .social .left{
+   float: left;
+   width:40%;
+}
+#contact .footer .social .right li,
+#contact .footer .social .left li{
+   margin-left: 12px;
+   width:60px;
+   height: 60px;
+   border-radius: 50%;
+   background: #FF94C2;
+   text-align: center;
+}
+#contact .footer .social .right li a,
+#contact .footer .social .left li a{
+   width:100%;
+   display: inline-block;
+    color: #fff;
+   line-height: 60px;
+   font-size: 20px;
 }
