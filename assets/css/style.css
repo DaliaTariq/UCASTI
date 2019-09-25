@@ -92,6 +92,14 @@ ul li{
 #hero .form-inline .form-control::placeholder{
    color: #fff;
 }
+#hero .form-inline .btn{
+   background-color: #B5004D !important;
+   color: #fff;
+   border: none;
+   border-radius: 17px;
+   width:95px;
+   height: 50px;
+}
 
 /*******************************************************/
 #categories{
