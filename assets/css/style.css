@@ -24,6 +24,11 @@ ul{
 ul li{
    display: inline-block;
 }
+.scrollNav{
+   background-image: linear-gradient(#B1567D , #CC0058 );
+   border-radius: 0 0 73px 73px;
+   z-index: 1000;
+}
 /**********Hero Section*****************************/
 
 .navbar{
@@ -43,6 +48,9 @@ ul li{
    margin-left: 358px;
    color: #fff;
 }
+.navbar .navbar-brand:hover{
+   color: #fff;
+}
 .navbar .navbar-collapse{
    flex-flow: row-reverse wrap;
 }
@@ -52,8 +60,16 @@ ul li{
    color:#fff;
    font-size: 18px;
 }
+.navbar-light .navbar-toggler{
+   margin-right: 267px;
+   /* margin-left: -8px; */
+   margin-top: -38px;
+   color: rgba(0,0,0,0);
+    border-color: #fff;
+    background: #fff;
+}
 
-
+/****************Start Hero***************************/
 #hero{
    background-image: url('../img/hero.PNG');
    background-size: cover;
@@ -317,41 +333,348 @@ font-size: 15px;
 }
 #contact .footer{
    position: relative;
-   height:415px;
-   background-image: url('../img/footer.png');
+   height: 200px;
+   background-image: url(../img/footer.png);
    background-position: top center;
    background-repeat: no-repeat;
    background-size: cover;
    z-index: -10;
-   margin-top: -220px;
+   margin-top: -80px;
    
 }
 #contact .footer .social{
    position: absolute;
-   bottom: 50px;
+   bottom: 20px;
    left: 25%;
    margin: 0 auto;
    width:72%;
 }
-#contact .footer .social .right,
-#contact .footer .social .left{
+ .footer .social .right,
+.footer .social .left{
    float: left;
-   width:40%;
+   width:45%;
 }
-#contact .footer .social .right li,
-#contact .footer .social .left li{
+.footer .social .right li,
+.footer .social .left li{
    margin-left: 12px;
-   width:60px;
-   height: 60px;
+   width:50px;
+   height: 50px;
    border-radius: 50%;
    background: #FF94C2;
    text-align: center;
 }
-#contact .footer .social .right li a,
-#contact .footer .social .left li a{
+ .footer .social .right li a,
+.footer .social .left li a{
    width:100%;
    display: inline-block;
     color: #fff;
-   line-height: 60px;
+   line-height:50px;
    font-size: 20px;
+}
+/******************hall pages****************/
+
+.scrollNavv{
+   background-image: linear-gradient(#B1567D , #CC0058 );
+   border-radius: 0 0 73px 73px;
+   z-index: 1000;
+}
+#foot{
+   margin: 0 auto;
+ 
+   background-image: linear-gradient( #CC0058 ,#B1567D  );
+   border-radius: 73px 73px 0 0 ;
+   margin-bottom: 0;
+    padding: 15px 0px;
+   text-align: center
+   
+}
+main#hall .hall{
+   margin-top: 100px;
+   text-align: center;
+}
+main#hall .hall .hall_image{
+   width: 152px;
+   height: 152px;
+   margin: 0 auto;
+ 
+}
+main#hall .hall .hall_image img{
+   width:100%;
+}
+main#hall .hall h3{
+   color: #737272;
+   text-align: center;
+   font-size: 50px;
+   font-size: 44px;
+   padding-right: 45px;
+   margin-bottom: 117px;
+}
+
+
+.offers-page .offer .offer_Box{
+   width:100%;
+   border-radius: 32px;
+   background-color: #fff;
+   box-shadow: 5px 10px 10px rgba(0,0,0,.4);
+   transition-duration: .4s;
+   margin-bottom: 70px;
+}
+.offers-page .offer .offer_Box:hover{
+   box-shadow: 5px 10px 40px rgba(0,0,0,.4);
+   transition-duration: .4s;
+   z-index: 10;
+}
+.offers-page .offer .offer_Box .offer_image{
+   width: 100%;
+   border-radius: 30px 30px 3px 5px;
+  /* margin-bottom: 25px;*/
+  
+}
+.offers-page .offer .offer_Box .offer_image img{
+   border-radius: 30px 30px 3px 5px;
+   width:100%;
+  /* margin-bottom: 25px;*/
+
+}
+
+
+.offers-page .offer .offer_Box .rate{
+   display: block;
+   
+}
+.offers-page .offer .offer_Box .rate img{
+   width: 50%;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+/***********************/
+
+/*
+      .hall{
+        margin-left:  600px;
+
+      }
+      .card-title p{
+       word-spacing: 280px; 
+      }
+      .card-text{
+        font-size:25px;
+        font-weight: bold;
+        color:#6B6B6B;
+        text-align: center;
+      }
+      .offers-page{
+   width:100%;
+   text-align: right;
+   margin-bottom: 170px;
+}
+
+
+.offers-page .offer .offer_Box .details{
+   padding: 25px;
+   margin-bottom: 75px;
+}
+.offers-page .offer .offer_Box .details h3{
+   font-size: 25px;
+   font-weight: bold;
+   color: #4E4D4D;
+   position: relative;
+   text-align: center;
+   margin-bottom: 25px;
+}
+.offers-page .offer .offer_Box .details h3::after{
+   position: absolute;
+   content: '';
+   height: 4px;
+   border-radius: 25px;
+   width: 57px;
+   bottom: -3px;
+   right: 114px;
+   background-color: #B5004D;
+}
+
+.offers-page .offer .offer_Box .details p{
+margin-top: 22px;
+font-size: 15px;
+
+}
+.offers-page .offer .offer_Box .rate{
+   display: block;
+   
+}
+.offers-page .offer .offer_Box .rate img{
+   width: 50%;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 25px;
+
+}
+.offers-page .offer .offer_Box .details a{
+   color: #B5004D;
+   font-size: 16px;
+   font-weight: bold;
+   display: block;
+   border-radius: 20px;
+   border:1px solid #B5004D;;
+   text-align: center;
+   width: 90px;
+   height: 30px;
+  margin: 0 auto;
+}
+.offers-page .offer .offer_Box .details a:hover{
+   color:#fff;
+   background: #B5004D;
+   transition-duration: .4s;
+}
+/**********************Footer*****************************/
+/*.subfooter{
+   background-color: #B1567D ;
+   background-image: linear-gradient(#B1567D , #CC0058 );
+   border-radius:  415px 415px 0 0;
+   margin-bottom: 0;
+   padding: 15px 400px;
+}
+.subfooter ul{
+   display: inline-block;
+   z-index: 100;
+}
+.subfooter ul li a{
+   color: #fff
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************Responsive**************************/
+/*Momile*/
+@media (min-width: 300px) and (max-width: 767px)  {
+   body{
+      overflow-x: hidden;
+   }
+  
+   ul li{
+      display: inline-block;
+   }
+   .navbar{
+      padding-left: 0;
+      padding-top: 10px;
+   }
+   .navbar-brand{
+      margin-right: -5rem;
+   }
+   .navbar .navbar-collapse .nav-item{
+      display: block;
+      
+   }
+   .navbar .navbar-collapse .nav-item:hover{
+     color: #B5004D;
+      
+   }
+   .navbar-toggler-icon{
+      width: 1em;
+      height: 1em;
+   }
+   #hero{
+      padding-right: 35px;
+      padding-top: 180px;
+      height: 715px;
+   }
+   #hero h1{
+      font-size: 30px; 
+      width: 331px;
+   }
+   #hero p{
+      float: right;
+    width: 420px;
+    font-size: 18px;
+    padding-bottom: 35px;
+   }
+   .section_title h2{
+      font-size: 35px;
+   }
+   #categories .category{
+      margin-bottom: 15px;
+   }
+   #categories .category .opacity{
+      padding-top: 30%;
+   }
+   #abou_Us .abot{
+      width:90%;
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 25px;
+   }
+   #abou_Us .abot .content{
+      width:80%
+   }
+   #contact .footer .social{
+    left: 10%;
+      width:100%;
+   }
+
+   #contact .footer .social .right li,
+#contact .footer .social .left li{
+   margin-left: 8px;
+   width:30px;
+   height: 30px;
+ 
+}
+
+.footer .social .right li, .footer .social .left li,
+.footer .social .right li{
+   width:30px;
+   height: 30px;
+}
+.footer .social .right li, .footer .social .left li a,
+.footer .social .right li a{
+   line-height: 30px;
+   font-size: 14px
+}
+
 }
